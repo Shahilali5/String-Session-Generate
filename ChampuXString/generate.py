@@ -49,7 +49,7 @@ buttons_ques = [
         InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ ʙᴏᴛ", callback_data="telethon_bot"),
     ],
     [
-        InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="back"),
+        InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="home"),
     ]
 ]
 

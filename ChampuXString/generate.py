@@ -53,23 +53,6 @@ gen_button = [
 ]
 
 
-ask_bot = "**» ᴄʜᴏᴏsᴇ ᴛʜᴇ sᴛꝛɪɴɢ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴧɴᴛ : :**"
-buttons_bot = [
-    [
-        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ", callback_data="pyrogram1"),
-        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ᴠ2", callback_data="pyrogram"),
-    ],
-    [
-        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ", callback_data="telethon"),
-    ],
-    [
-        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ʙᴏᴛ", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ ʙᴏᴛ", callback_data="telethon_bot"),
-    ],
-    [
-        InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="back"),
-    ]
-]
 
 ask_tools = "**<blockquote><b>❖ ʜᴇʀᴇ ɪs ᴛʜᴇ ᴛᴇʟᴇɢʀᴀᴍ ᴛᴏᴏʟs ᴍᴇᴛʜᴏᴅ.</b></blockquote>\n\n» ᴘʟᴇᴀsᴇ ᴄʜᴏᴏsᴇ ᴛʜᴇ ʟɪʙʀᴀʀʏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ.: :**"
 buttons_tools = [

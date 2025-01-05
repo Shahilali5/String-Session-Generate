@@ -2,14 +2,12 @@
 import traceback
 from pyrogram import Client, filters
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
-from ChampuXString.generate import generate_session, ask_ques, buttons_ques, buttons_tools, ask_tools
+from ChampuXString.generate import generate_session, ask_ques, buttons_ques, buttons_tools, ask_tools, ask_bot, buttons_bot
 
 ERROR_MESSAGE = "ᴡᴛғ ! sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ. \n\n**ᴇʀʀᴏʀ** : {} " \
             "\n\n**ᴩʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ @itsMeShivanshu**, ɪғ ᴛʜɪs ᴍᴇssᴀɢᴇ " \
             "ᴅᴏᴇsɴ'ᴛ ᴄᴏɴᴛᴀɪɴ ᴀɴʏ sᴇɴsɪᴛɪᴠᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ " \
             "ʙᴇᴄᴀᴜsᴇ ᴛʜɪs ᴇʀʀᴏʀ ɪs **ɴᴏᴛ ʟᴏɢɢᴇᴅ ʙʏ ᴛʜᴇ ʙᴏᴛ** !"
-
-ask_bot = "**<blockquote><b>❖ ʜᴇʀᴇ ɪs ᴛʜᴇ ʙᴏᴛ ᴍᴇᴛʜᴏᴅ.</b></blockquote>\n\n» ᴘʟᴇᴀsᴇ ᴄʜᴏᴏsᴇ ᴛʜᴇ ʟɪʙʀᴀʀʏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ.: :**"
 
 @Client.on_callback_query(filters.regex(pattern=r"^genbybot$"))
 async def genbybot_callback(bot: Client, callback_query: CallbackQuery):
@@ -19,22 +17,7 @@ async def genbybot_callback(bot: Client, callback_query: CallbackQuery):
     # Edit the current message to show the bot generation menu
     await callback_query.message.edit_text(
         ask_bot,
-        reply_markup=InlineKeyboardMarkup([
-    [
-        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ", callback_data="pyrogram1"),
-        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ᴠ2", callback_data="pyrogram"),
-    ],
-    [
-        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ", callback_data="telethon"),
-    ],
-    [
-        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ʙᴏᴛ", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ ʙᴏᴛ", callback_data="telethon_bot"),
-    ],
-    [
-        InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="back"),
-    ]
-        ])
+        reply_markup=InlineKeyboardMarkup(buttons_bot)
     )
 
 @Client.on_callback_query(filters.regex(pattern=r"^genbytools$"))

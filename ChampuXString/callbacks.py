@@ -9,6 +9,12 @@ ERROR_MESSAGE = "ᴡᴛғ ! sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ. \n\n
             "ᴅᴏᴇsɴ'ᴛ ᴄᴏɴᴛᴀɪɴ ᴀɴʏ sᴇɴsɪᴛɪᴠᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ " \
             "ʙᴇᴄᴀᴜsᴇ ᴛʜɪs ᴇʀʀᴏʀ ɪs **ɴᴏᴛ ʟᴏɢɢᴇᴅ ʙʏ ᴛʜᴇ ʙᴏᴛ** !"
 
+
+@Client.on_callback_query(filters.regex(pattern=r"^back$"))
+async def back_callback(bot: Client, callback_query: CallbackQuery):
+    await callback_query.answer()
+    await callback_query.message.reply(ask_ques, reply_markup=InlineKeyboardMarkup(buttons_ques))
+
 @Client.on_callback_query(filters.regex(pattern=r"^(generate|pyrogram|pyrogram_bot|telethon_bot|telethon)$"))
 async def _callbacks(bot: Client, callback_query: CallbackQuery):
     query = callback_query.matches[0].group(1)
@@ -28,9 +34,6 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         elif query == "telethon":
             await callback_query.answer()
             await generate_session(bot, callback_query.message, telethon=True)
-        elif query == "back":
-            await callback_query.answer()
-            await callback_query.message.reply(ask_ques, reply_markup=InlineKeyboardMarkup(buttons_ques))
     except Exception as e:
         print(traceback.format_exc())
         print(e)

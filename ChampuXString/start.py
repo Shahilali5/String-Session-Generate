@@ -27,7 +27,7 @@ async def start(bot: Client, msg: Message):
     me2 = (await bot.get_me()).mention
     await bot.send_message(
         chat_id=msg.chat.id,
-        text=home_ques.format(msg=msg, me2=me2),
+        text=home_ques.format(msg=msg, me2=me2, OWNER_ID=OWNER_ID),  # Added OWNER_ID here
         reply_markup=InlineKeyboardMarkup(home_buttons),
         disable_web_page_preview=True,
     )
@@ -40,6 +40,6 @@ async def home_callback(bot: Client, callback_query: CallbackQuery):
 
     # Edit the current message to show the main menu
     await callback_query.message.edit_text(
-        home_ques.format(msg=callback_query.message, me2=(await bot.get_me()).mention),
+        home_ques.format(msg=callback_query.message, me2=(await bot.get_me()).mention, OWNER_ID=OWNER_ID),  # Added OWNER_ID here
         reply_markup=InlineKeyboardMarkup(home_buttons)
     )

@@ -9,6 +9,27 @@ ERROR_MESSAGE = "ᴡᴛғ ! sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ. \n\n
             "ᴅᴏᴇsɴ'ᴛ ᴄᴏɴᴛᴀɪɴ ᴀɴʏ sᴇɴsɪᴛɪᴠᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ " \
             "ʙᴇᴄᴀᴜsᴇ ᴛʜɪs ᴇʀʀᴏʀ ɪs **ɴᴏᴛ ʟᴏɢɢᴇᴅ ʙʏ ᴛʜᴇ ʙᴏᴛ** !"
 
+@Client.on_callback_query(filters.regex(pattern=r"^genbybot$"))
+async def genbybot_callback(bot: Client, callback_query: CallbackQuery):
+    # Acknowledge the callback query
+    await callback_query.answer()
+
+    # Edit the current message to show the bot generation menu
+    await callback_query.message.edit_text(
+        ask_bot,
+        reply_markup=InlineKeyboardMarkup(buttons_bot)
+    )
+
+@Client.on_callback_query(filters.regex(pattern=r"^genbytools$"))
+async def genbybot_callback(bot: Client, callback_query: CallbackQuery):
+    # Acknowledge the callback query
+    await callback_query.answer()
+
+    # Edit the current message to show the bot generation menu
+    await callback_query.message.edit_text(
+        ask_tools,
+        reply_markup=InlineKeyboardMarkup(buttons_tools)
+    )
 
 @Client.on_callback_query(filters.regex(pattern=r"^back$"))
 async def back_callback(bot: Client, callback_query: CallbackQuery):

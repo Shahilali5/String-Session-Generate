@@ -35,18 +35,11 @@ import config
 
 
 
-ask_ques = "**» ᴄʜᴏᴏsᴇ ᴛʜᴇ sᴛꝛɪɴɢ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴧɴᴛ : :**"
+ask_ques = "<blockquote><b>❖ ᴡʜɪᴄʜ ᴍᴇᴛʜᴏᴅ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴs ?</b></blockquote>\n\n⏤͟͟͞͞★ ηᴏᴛᴇ :- ᴀʟᴡᴀʏs ᴄʜᴏᴏsᴇ ᴛᴇʟᴇɢʀᴀᴍ ᴛᴏᴏʟs ϻᴇᴛʜᴏᴅ 🍹\n\n⏤͟͟͞͞★ ᴡᴀʀɴɪɴɢ :- ᴅᴏɴ'ᴛ ᴜsᴇ ʙᴏᴛ ᴍᴇᴛʜᴏᴅ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜʀ ɪᴅ ᴀᴜᴛᴏ ʟᴏɢᴏᴜᴛ 😣"
 buttons_ques = [
     [
-        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ", callback_data="pyrogram1"),
-        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ᴠ2", callback_data="pyrogram"),
-    ],
-    [
-        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ", callback_data="telethon"),
-    ],
-    [
-        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ʙᴏᴛ", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ ʙᴏᴛ", callback_data="telethon_bot"),
+        InlineKeyboardButton("˹ɢᴇɴᴇʀᴀᴛᴇ ʙʏ ʙᴏᴛ˼", callback_data="genbybot"),
+        InlineKeyboardButton("˹ɢᴇɴᴇʀᴀᴛᴇ ʙʏ ᴛᴏᴏʟs˼", callback_data="genbytools"),
     ],
     [
         InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="home"),
@@ -60,6 +53,37 @@ gen_button = [
 ]
 
 
+ask_bot = "**» ᴄʜᴏᴏsᴇ ᴛʜᴇ sᴛꝛɪɴɢ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴧɴᴛ : :**"
+buttons_bot = [
+    [
+        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ", callback_data="pyrogram1"),
+        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ᴠ2", callback_data="pyrogram"),
+    ],
+    [
+        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ", callback_data="telethon"),
+    ],
+    [
+        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ʙᴏᴛ", callback_data="pyrogram_bot"),
+        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ ʙᴏᴛ", callback_data="telethon_bot"),
+    ],
+    [
+        InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="back"),
+    ]
+]
+
+ask_tools = "**<blockquote><b>❖ ʜᴇʀᴇ ɪs ᴛʜᴇ ᴛᴇʟᴇɢʀᴀᴍ ᴛᴏᴏʟs ᴍᴇᴛʜᴏᴅ.</b></blockquote>\n\n» ᴘʟᴇᴀsᴇ ᴄʜᴏᴏsᴇ ᴛʜᴇ ʟɪʙʀᴀʀʏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ.: :**"
+buttons_tools = [
+    [
+        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ", url=f"https://t.me/ChampuStringBot"),
+        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ", url=f"https://t.me/ChampuStringBot"),
+    ],
+    [
+        InlineKeyboardButton("ɢᴇɴᴇʀᴀᴛᴇ ᴀʟʟ ᴛʏᴘᴇs", url=f"https://t.me/ChampuStringBot"),
+    ],
+    [
+        InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="back"),
+    ]
+]
 
 
 @Client.on_message(filters.private & ~filters.forwarded & filters.command(["generate", "gen", "string", "str"]))

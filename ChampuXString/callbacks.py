@@ -2,7 +2,7 @@
 import traceback
 from pyrogram import Client, filters
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
-from ChampuXString.generate import generate_session, ask_ques, buttons_ques
+from ChampuXString.generate import generate_session, ask_ques, buttons_ques, ask_bot, buttons_bot, buttons_tools, ask_tools
 
 ERROR_MESSAGE = "ᴡᴛғ ! sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ. \n\n**ᴇʀʀᴏʀ** : {} " \
             "\n\n**ᴩʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ @itsMeShivanshu**, ɪғ ᴛʜɪs ᴍᴇssᴀɢᴇ " \
@@ -22,6 +22,12 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         if query == "generate":
             await callback_query.answer()
             await callback_query.message.reply(ask_ques, reply_markup=InlineKeyboardMarkup(buttons_ques))
+        elif query == "genbybot":
+            await callback_query.answer()
+            await callback_query.message.reply(ask_bot, reply_markup=InlineKeyboardMarkup(buttons_bot))
+        elif query == "genbytools":
+            await callback_query.answer()
+            await callback_query.message.reply(ask_tools, reply_markup=InlineKeyboardMarkup(buttons_tools))
         elif query == "pyrogram":
             await callback_query.answer()
             await generate_session(bot, callback_query.message)

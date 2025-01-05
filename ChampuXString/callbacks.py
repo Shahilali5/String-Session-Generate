@@ -38,7 +38,7 @@ async def genbybot_callback(bot: Client, callback_query: CallbackQuery):
     )
 
 @Client.on_callback_query(filters.regex(pattern=r"^genbytools$"))
-async def genbybot_callback(bot: Client, callback_query: CallbackQuery):
+async def genbytools_callback(bot: Client, callback_query: CallbackQuery):
     # Acknowledge the callback query
     await callback_query.answer()
 

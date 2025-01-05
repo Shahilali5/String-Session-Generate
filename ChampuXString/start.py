@@ -25,9 +25,6 @@ async def start(bot: Client, msg: Message):
                     InlineKeyboardButton(text="ɢᴇɴᴇʀᴧᴛᴇ sᴛʀɪɴɢ", callback_data="generate")
                 ],
                 [
-                    InlineKeyboardButton("ᴏᴘᴇɴ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ", url="https://telegram.tools/session-string-generator")
-                ],
-                [
                     InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/akaChampu"),
                     InlineKeyboardButton("ᴄʜᴧɴɴᴇʟ", url="https://t.me/TheChampu")
                 ]

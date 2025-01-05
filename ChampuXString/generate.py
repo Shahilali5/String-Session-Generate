@@ -42,12 +42,15 @@ buttons_ques = [
         InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ᴠ2", callback_data="pyrogram"),
     ],
     [
-        InlineKeyboardButton("ᴏᴘᴇɴ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ", url="https://telegram.tools/session-string-generator"),
+        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ", callback_data="telethon"),
     ],
     [
         InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ʙᴏᴛ", callback_data="pyrogram_bot"),
         InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ ʙᴏᴛ", callback_data="telethon_bot"),
     ],
+    [
+        InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="back"),
+    ]
 ]
 
 gen_button = [

@@ -9,15 +9,15 @@ home_ques = """ʜᴇʟʟᴏ {msg.from_user.mention},
 🔐 ᴜɴʟᴏᴄᴋ ᴛʜᴇ ᴍʏsᴛᴇʀɪᴇs ᴏғ sᴛʀɪɴɢ ɢᴇɴᴇʀᴧᴛɪᴏɴ!
 🌌 sʟᴇᴇᴋ. ᴇʟᴇɢᴧɴᴛ. ᴛɪᴍᴇʟᴇss.
 
-🎨 ᴄʀᴇᴧᴛᴇᴅ ʙʏ: [ᴄʜᴧᴍᴘᴜ](tg://user?id={OWNER_ID}) !"""
+🎨 ᴄʀᴇᴧᴛᴇᴅ ʙʏ: [ɪ֟፝ؖ۬ꪖꪑ • 𝛅ʜ⋏֟፝͝н𝛊ʟ⚝](tg://user?id={OWNER_ID}) !"""
 
 home_buttons = [
     [
         InlineKeyboardButton(text="ɢᴇɴᴇʀᴧᴛᴇ sᴛʀɪɴɢ", callback_data="generate")
     ],
     [
-        InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/akaChampu"),
-        InlineKeyboardButton("ᴄʜᴧɴɴᴇʟ", url="https://t.me/TheChampu")
+        InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/+3bZjFN_lQUJiMTQ1"),
+        InlineKeyboardButton("ᴄʜᴧɴɴᴇʟ", url="https://t.me/shahilWebs")
     ]
 ]
 

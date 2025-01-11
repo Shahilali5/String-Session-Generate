@@ -1,6 +1,6 @@
 <h2 align="center">
      ˹ᴄʜᴧᴍᴘᴜ ꭙ sᴛꝛɪɴɢ˼ </h2>
-<p align="center"><img src="https://te.legra.ph/file/4cea75b8ff534def82b75-d80be89f0c4f5c0552.jpg" width="1000"></a></p>
+<p align="center"><img src="https://te.legra.ph/file/18dc1495a4899e42746bc-19487fc7a56de6c5c3.jpg" width="1000"></a></p>
 <p align="center">
 
 

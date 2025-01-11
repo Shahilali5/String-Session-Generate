@@ -1,4 +1,4 @@
-
+    
 from pyrogram.types import Message
 from telethon import TelegramClient
 from pyrogram import Client, filters
@@ -74,11 +74,11 @@ buttons_bot = [
 ask_tools = "**<blockquote><b>❖ ʜᴇʀᴇ ɪs ᴛʜᴇ ᴛᴇʟᴇɢʀᴀᴍ ᴛᴏᴏʟs ᴍᴇᴛʜᴏᴅ.</b></blockquote>\n\n» ᴘʟᴇᴀsᴇ ᴄʜᴏᴏsᴇ ᴛʜᴇ ʟɪʙʀᴀʀʏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ.: :**"
 buttons_tools = [
     [
-        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ", url=f"https://t.me/ChampuStringBot/Telethon"),
-        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ", url=f"https://t.me/ChampuStringBot/Pyrogram"),
+        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ", url=f"https://t.me/StringCrafterBot/Telethon"),
+        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ", url=f"https://t.me/StringCrafterBot/Pyrogram"),
     ],
     [
-        InlineKeyboardButton("ɢᴇɴᴇʀᴀᴛᴇ ᴀʟʟ ᴛʏᴘᴇs", url=f"https://t.me/ChampuStringBot/genalltypes"),
+        InlineKeyboardButton("ɢᴇɴᴇʀᴀᴛᴇ ᴀʟʟ ᴛʏᴘᴇs", url=f"https://t.me/StringCrafterBot/genalltypes"),
     ],
     [
         InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="back"),

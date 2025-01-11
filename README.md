@@ -1,6 +1,6 @@
 <h2 align="center">
-     ˹ᴄʜᴧᴍᴘᴜ ꭙ sᴛꝛɪɴɢ˼ </h2>
-<p align="center"><img src="https://te.legra.ph/file/18dc1495a4899e42746bc-19487fc7a56de6c5c3.jpg" width="1000"></a></p>
+     𓆩˹𝖲𝗍𝗋𝗂𝗇𝗀 ✘ 𝖢𝗋𝖺𝖿𝗍𝖾𝗋˼𓆪 </h2>
+<p align="center"><img src="https://te.legra.ph/file/18dc1495a4899e42746bc-19487fc7a56de6c5c3.jpg" width="400"></a></p>
 <p align="center">
 
 
